@@ -65,8 +65,16 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="8dp"
-        android:text="5К"
+        android:text="Music Stopped"
         android:textSize="16sp"/>
+
+    <!-- Добавлен ProgressBar для прогресса музыки -->
+    <ProgressBar
+        android:id="@+id/music_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/btn_start_foreground"
@@ -74,6 +82,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Start Music Service"/>
+
+    <!-- Добавлена кнопка для паузы/возобновления -->
+    <Button
+        android:id="@+id/btn_pause_resume_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pause Music"
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/btn_stop_foreground"
